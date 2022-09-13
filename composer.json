@@ -1,0 +1,17 @@
+{
+    "name": "usuario/user-mgmt-arturoparraga",
+    "require": {
+        "eftec/bladeone": "^4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Usuario\\UserMgmtArturoparraga\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arturoparraga",
+            "email": "81523027+Arturoparraga@users.noreply.github.com"
+        }
+    ]
+}

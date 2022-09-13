@@ -1,0 +1,15 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('content'); ?>
+<form action="index.php" method="post">
+ <input type="submit" value="Cerrar sesion" name="cerrarSesion"/>
+ <input type="submit" value="Volver atras" name="volver"/>
+</form>
+
+<h2><?php echo \htmlentities($titulo, ENT_QUOTES, 'UTF-8', false); ?> (<?php echo \htmlentities($año, ENT_QUOTES, 'UTF-8', false); ?>)</h2>
+<img src="img/<?php echo \htmlentities($img, ENT_QUOTES, 'UTF-8', false); ?>" alt="<?php echo \htmlentities($titulo, ENT_QUOTES, 'UTF-8', false); ?>" width="500" height="300" id="foto"/>
+<p>Autor: <?php echo \htmlentities($pintor, ENT_QUOTES, 'UTF-8', false); ?></p>
+<p>Epoca: <?php echo \htmlentities($epoca, ENT_QUOTES, 'UTF-8', false); ?></p>
+<p><?php echo \htmlentities($descripcion, ENT_QUOTES, 'UTF-8', false); ?></p>
+ 
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('app'); } ?>
